@@ -54,5 +54,3 @@ python3 -m unittest discover -s tests -v
 python3 run.py --conditional
 python3 plot.py --conditional
 ```
-
-GitHub에는 이 README가 있는 폴더의 내용 전체를 올리세요. `.venv`, `__pycache__`는 제외합니다. ZIP은 배포용이므로 레포 내부에 함께 올릴 필요가 없습니다.

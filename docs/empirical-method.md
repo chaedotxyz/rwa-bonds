@@ -27,9 +27,3 @@
 자료가 없는 값을 0으로 출력하지 않는다. 서로 다른 상품의 관측을 합쳐 하나의 인과적 입증으로 제시하지 않는다. 현재 결과는 신용 문제 및 특정 출구 제약에 대한 부분 검증이며 전체 명제의 입증 완료가 아니다.
 
 공식 후속 안내: [BUIDL RFQ 경로](https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl), [Lend East 당시 예상 회수 공지](https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957), [추가 상환 요구 공지](https://gov.goldfinch.finance/t/actions-against-lend-east/2052). 웹 안내는 2026-09-06 재열람했으며 체인 자료를 실시간 갱신한 것은 아니다.
-
-## 2026-09-06 추가 수집
-
-`nav-public.json`에 BUIDL NAV 피드와 과거 Lend East pool 주소 연결을 추가했습니다. 과거 3개 블록의 creditLine() 연결을 직접 재확인했으므로 위 과거 귀속 제한은 추가 자료에서 해소되었습니다. `final_verification.md`가 우선하는 최신 판정입니다.
-
-선택한 거래의 PaymentApplied 이벤트와 USDC Transfer를 대조했고, 그 거래의 원금 반영액이 두 시점의 잔액 차이와 일치합니다. 전체 현금흐름 또는 최종 회수 감사가 아닙니다. GIP-67 공지와 금액·시점이 일치하므로 보전금과 연결해 해석하며, 차입자 자체 회수액으로 분류하지 않습니다.

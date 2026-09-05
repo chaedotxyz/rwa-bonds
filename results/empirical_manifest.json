@@ -1,0 +1,484 @@
+{
+  "analysis": "empirical_observations_v1",
+  "assumption_sampling": false,
+  "latest_observation_utc": "2026-09-05T13:21:23+00:00",
+  "observations": [
+    {
+      "product": "BUIDL Ethereum",
+      "metric": "token_supply",
+      "value": 274807252.87,
+      "unit": "BUIDL",
+      "kind": "observed",
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "block": 19560000,
+      "scope": "Ethereum only; not all-chain AUM or market NAV",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_balance()",
+      "value": 10149999.830483,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "block": 19560000,
+      "scope": "contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_principalOwed()",
+      "value": 0.0,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "block": 19560000,
+      "scope": "contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "sharePrice()",
+      "value": 1.16670427146582,
+      "unit": "USDC/FIDU",
+      "kind": "observed",
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "block": 19560000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "usdcAvailable()",
+      "value": 147272.889982,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "block": 19560000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "totalWritedowns()",
+      "value": 3103642.4969,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "block": 19560000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "BUIDL Ethereum",
+      "metric": "token_supply",
+      "value": 293464382.52,
+      "unit": "BUIDL",
+      "kind": "observed",
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "block": 19660000,
+      "scope": "Ethereum only; not all-chain AUM or market NAV",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_balance()",
+      "value": 10149999.830483,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "block": 19660000,
+      "scope": "contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_principalOwed()",
+      "value": 10149999.830483,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "block": 19660000,
+      "scope": "contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "sharePrice()",
+      "value": 1.1676083917511442,
+      "unit": "USDC/FIDU",
+      "kind": "observed",
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "block": 19660000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "usdcAvailable()",
+      "value": 51570.440328,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "block": 19660000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "totalWritedowns()",
+      "value": 3103642.4969,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "block": 19660000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "BUIDL Ethereum",
+      "metric": "token_supply",
+      "value": 349430246.52,
+      "unit": "BUIDL",
+      "kind": "observed",
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "block": 19760000,
+      "scope": "Ethereum only; not all-chain AUM or market NAV",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_balance()",
+      "value": 10149999.830483,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "block": 19760000,
+      "scope": "contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_principalOwed()",
+      "value": 10149999.830483,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "block": 19760000,
+      "scope": "contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "sharePrice()",
+      "value": 1.1709278890435795,
+      "unit": "USDC/FIDU",
+      "kind": "observed",
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "block": 19760000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "usdcAvailable()",
+      "value": 60670.229182,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "block": 19760000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "totalWritedowns()",
+      "value": 3162027.720889,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "block": 19760000,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "BUIDL Ethereum",
+      "metric": "token_supply",
+      "value": 211939358.270349,
+      "unit": "BUIDL",
+      "kind": "observed",
+      "as_of": "2026-09-05T13:21:23+00:00",
+      "block": 25911392,
+      "scope": "Ethereum only; not all-chain AUM or market NAV",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_balance()",
+      "value": 9476063.253407,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2026-09-05T13:21:23+00:00",
+      "block": 25911392,
+      "scope": "contract accounting; not cash recovery or NAV; same-block pool mapping",
+      "status": "observed"
+    },
+    {
+      "product": "Lend East",
+      "metric": "credit_line_principalOwed()",
+      "value": 9476063.253407,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2026-09-05T13:21:23+00:00",
+      "block": 25911392,
+      "scope": "contract accounting; not cash recovery or NAV; same-block pool mapping",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "sharePrice()",
+      "value": 0.9444480223681261,
+      "unit": "USDC/FIDU",
+      "kind": "observed",
+      "as_of": "2026-09-05T13:21:23+00:00",
+      "block": 25911392,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "usdcAvailable()",
+      "value": 0.0,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2026-09-05T13:21:23+00:00",
+      "block": 25911392,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    },
+    {
+      "product": "Goldfinch Senior Pool context",
+      "metric": "totalWritedowns()",
+      "value": 17095606.38519,
+      "unit": "USDC",
+      "kind": "observed",
+      "as_of": "2026-09-05T13:21:23+00:00",
+      "block": 25911392,
+      "scope": "aggregate pool; not Lend East alone",
+      "status": "observed"
+    }
+  ],
+  "buidl_routes": [
+    {
+      "block": 19660000,
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "settlement_paused": false,
+      "allowance_usdc": 19500000.0,
+      "holder_cash_usdc": 99500135.002484,
+      "necessary_condition_ceiling_usdc": 19500000.0,
+      "executable_quote_usdc": null,
+      "scope": "Circle route only; not all BUIDL exits",
+      "source": "data/buidl-route-state.json",
+      "status": "observed_state_and_derived_upper_bound"
+    },
+    {
+      "block": 25911544,
+      "as_of": "2026-09-05T13:51:47+00:00",
+      "settlement_paused": true,
+      "allowance_usdc": 0.0,
+      "holder_cash_usdc": 0.0,
+      "necessary_condition_ceiling_usdc": 0.0,
+      "executable_quote_usdc": null,
+      "scope": "Circle route only; not all BUIDL exits",
+      "source": "data/buidl-route-state.json",
+      "status": "observed_state_and_derived_upper_bound"
+    }
+  ],
+  "findings": [
+    {
+      "id": "LE_EXPECTED_SHORTFALL",
+      "product": "Lend East",
+      "value": 5900000,
+      "unit": "USD",
+      "status": "derived_from_official_report",
+      "interpretation": "2024-04-02 expected shortfall, not realized loss",
+      "source": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957"
+    },
+    {
+      "id": "LE_EXPECTED_SHORTFALL_PCT",
+      "product": "Lend East",
+      "value": 58.128078817733986,
+      "unit": "percent",
+      "status": "derived_from_official_report",
+      "interpretation": "Expected shortfall / reported principal; not actual NAV discount",
+      "source": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957"
+    },
+    {
+      "id": "LE_OUTSTANDING_PRINCIPAL",
+      "product": "Lend East",
+      "value": 9476063.253407,
+      "unit": "USDC",
+      "status": "observed",
+      "interpretation": "Unpaid principal recorded at latest saved block",
+      "source": "data/chain.json"
+    },
+    {
+      "id": "LE_DAYS_AFTER_TERM_END",
+      "product": "Lend East",
+      "value": 884.7989004629629,
+      "unit": "days",
+      "status": "derived_from_observations",
+      "interpretation": "Time since contract term end at snapshot with unpaid principal; not NAV lag or continuous default proof",
+      "source": "data/chain.json"
+    },
+    {
+      "id": "LE_BALANCE_CHANGE",
+      "product": "Lend East",
+      "value": -673936.5770760011,
+      "unit": "USDC",
+      "status": "derived_from_observations",
+      "interpretation": "Last minus first recorded credit-line balance; not verified cash recovery",
+      "source": "data/history.json; data/chain.json"
+    },
+    {
+      "id": "BUIDL_ROUTE_CEILING_19660000",
+      "product": "BUIDL",
+      "value": 19500000.0,
+      "unit": "USDC",
+      "status": "derived_from_observations",
+      "interpretation": "Necessary-condition ceiling at block 19660000; eligible access and executable price not established",
+      "source": "data/buidl-route-state.json"
+    },
+    {
+      "id": "BUIDL_ROUTE_CEILING_25911544",
+      "product": "BUIDL",
+      "value": 0.0,
+      "unit": "USDC",
+      "status": "derived_from_observations",
+      "interpretation": "Necessary-condition ceiling at block 25911544; eligible access and executable price not established",
+      "source": "data/buidl-route-state.json"
+    },
+    {
+      "id": "BUIDL_actual_nav_gap",
+      "product": "BUIDL",
+      "value": null,
+      "unit": "USD",
+      "status": "not_identified",
+      "interpretation": "Missing matched valuation/execution data or consensus health evidence; not zero",
+      "source": "docs/empirical-method.md"
+    },
+    {
+      "id": "BUIDL_realized_trade_profit",
+      "product": "BUIDL",
+      "value": null,
+      "unit": "USD",
+      "status": "not_identified",
+      "interpretation": "Missing matched valuation/execution data or consensus health evidence; not zero",
+      "source": "docs/empirical-method.md"
+    },
+    {
+      "id": "BUIDL_normal_pos_during_event",
+      "product": "BUIDL",
+      "value": null,
+      "unit": "boolean",
+      "status": "not_identified",
+      "interpretation": "Missing matched valuation/execution data or consensus health evidence; not zero",
+      "source": "docs/empirical-method.md"
+    },
+    {
+      "id": "Lend East_actual_nav_gap",
+      "product": "Lend East",
+      "value": null,
+      "unit": "USD",
+      "status": "not_identified",
+      "interpretation": "Missing matched valuation/execution data or consensus health evidence; not zero",
+      "source": "docs/empirical-method.md"
+    },
+    {
+      "id": "Lend East_realized_trade_profit",
+      "product": "Lend East",
+      "value": null,
+      "unit": "USD",
+      "status": "not_identified",
+      "interpretation": "Missing matched valuation/execution data or consensus health evidence; not zero",
+      "source": "docs/empirical-method.md"
+    },
+    {
+      "id": "Lend East_normal_pos_during_event",
+      "product": "Lend East",
+      "value": null,
+      "unit": "boolean",
+      "status": "not_identified",
+      "interpretation": "Missing matched valuation/execution data or consensus health evidence; not zero",
+      "source": "docs/empirical-method.md"
+    }
+  ],
+  "comparison": [
+    {
+      "product": "BUIDL",
+      "observed": "Token supply; specific Circle route pause, allowance and cash",
+      "loss_evidence": "No identified realized loss",
+      "exit_evidence": "Necessary-condition bound for a specific route; no executable RFQ",
+      "nav_gap": "not identified",
+      "pos_normality": "not independently tested",
+      "attack_profit": "not identified"
+    },
+    {
+      "product": "Lend East",
+      "observed": "Credit-line balance, principal owed and term end",
+      "loss_evidence": "Reported expected shortfall; final recovery unverified",
+      "exit_evidence": "No verified claim-sale price or redemption execution",
+      "nav_gap": "not identified",
+      "pos_normality": "not independently tested",
+      "attack_profit": "not identified"
+    }
+  ],
+  "evidence_sha256": {
+    "sources.json": "3e8741ce90ade67126117e7aabdc1e6a586c3440244a3ce35762421a11873ab5",
+    "credit-event.json": "e1c020ddf241d1b2f6ba604c05bb57e6fc6f19179204f68d039b889d6a449689",
+    "lendeast-disclosure.json": "a83df63fdb2fa4979b730a92c7f40d43eabccce468e2602bdf0590d222d4a331",
+    "history.json": "9bcf50f80e43241d526e7c50d0a7cdfc92283ed9a28a454dd2365257250c1f58",
+    "chain.json": "b05b9f9deb11710c64212d61bf81f3814e28a62e704a141776fb9365daa194e2",
+    "report-excerpts.txt": "c9b90edb937c2cb87fedfb82dfab20ab2f5c03d18348166ce525a9e184cb12dc",
+    "product-source-notes.json": "31c209ef329951840e2f2604e17fd40640c1950c8a383b9baa67e415b8a83a59",
+    "buidl-route-state.json": "81e290a6785bc4796f7476acd6996dd15003ac238195cd8b77842f09de2c4de3",
+    "buidl-verified-state.json": "29948427cb1f9bce71124f87d7f3edc17a24f7e26fec3d05982abb7d59b22187",
+    "buidl-settlement-state.json": "a2a616d3c320f280fa16125e6b45f6852eeb34de0dfa8a9053c9294f1603ab04",
+    "buidl-liquidity-state.json": "1e67393b2a176b6acf9cc1c3a31e06e97741b1a42e5f06d4db1cd4ac53dc9472",
+    "nav-public.json": "d771b94f2762b48e2c80477c5b7ad8f79a450a6beda0d17935f7e23d587ebd9b",
+    "gip67.json": "a5cf2486f93615000d76625ebcbfefb0f1dc41d06bc40d0631240f3c9cff4a4e",
+    "gip67-rest.json": "8882248e7c2adbe817543c4fafca247e10f85bbb3bf86c560ffd938ac1119f7f",
+    "verified-payment.json": "525674f669bd2e6717ae5756be6de84b7539878cada18bcd827dfd0935b66da7",
+    "ITranchedPool.sol": "52c71ebee4e3839f02c3dd99c58e0352f2d85712c3ff5471a9ac27d670881800",
+    "ILoan.sol": "a1c4dd039ae8c1a69a602629b397e9bc2bd38ed9475a46350ba5f61b5563eb12",
+    "nav-source-audit.json": "a546082c9cce2e68d74b0fa8a97aa3ebb3787b868db417a3eddffab9b607984d",
+    "payment-block-receipts.json": "680fe6537d320de0249220125db24a90affeaa11b5e2a2143cc2eb163fad9a7a"
+  },
+  "source_notes": [
+    {
+      "product": "BUIDL",
+      "published_at": "2026-02-11",
+      "reviewed_at": "2026-09-06",
+      "url": "https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl",
+      "kind": "official_announcement",
+      "finding": "Securitize facilitates RFQ trades through UniswapX with whitelisted counterparties. Actual executable quotes not collected."
+    },
+    {
+      "product": "Lend East",
+      "published_at": "2024-05-10",
+      "reviewed_at": "2026-09-06",
+      "url": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957/11",
+      "kind": "official_party_statement",
+      "finding": "Warbler Labs states it does not know portfolio NAV. Expected repayment is not measured NAV."
+    },
+    {
+      "product": "Lend East",
+      "published_at": "2024-10-25",
+      "reviewed_at": "2026-09-06",
+      "url": "https://gov.goldfinch.finance/t/actions-against-lend-east/2052",
+      "kind": "official_party_statement",
+      "finding": "Foundation announces another default notice and demand. Not final recovery evidence."
+    }
+  ],
+  "identification": "Observed credit distress and route constraints do not identify actual NAV gap, attacker profit, or PoS normality."
+}

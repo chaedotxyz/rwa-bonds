@@ -1,0 +1,3 @@
+﻿block,as_of,settlement_paused,allowance_usdc,holder_cash_usdc,necessary_condition_ceiling_usdc,executable_quote_usdc,scope,source,status
+19660000,2024-04-15T09:24:11+00:00,False,19500000.0,99500135.002484,19500000.0,,Circle route only; not all BUIDL exits,data/buidl-route-state.json,observed_state_and_derived_upper_bound
+25911544,2026-09-05T13:51:47+00:00,True,0.0,0.0,0.0,,Circle route only; not all BUIDL exits,data/buidl-route-state.json,observed_state_and_derived_upper_bound

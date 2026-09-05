@@ -1,0 +1,237 @@
+{
+  "nav_observations": [
+    {
+      "block": 19560000,
+      "as_of": "2024-04-01T09:10:35+00:00",
+      "nav_usd": null,
+      "updated_at": null,
+      "age_hours": null,
+      "status": "unavailable",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 19660000,
+      "as_of": "2024-04-15T09:24:11+00:00",
+      "nav_usd": null,
+      "updated_at": null,
+      "age_hours": null,
+      "status": "unavailable",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 19760000,
+      "as_of": "2024-04-29T09:13:11+00:00",
+      "nav_usd": null,
+      "updated_at": null,
+      "age_hours": null,
+      "status": "unavailable",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25861771,
+      "as_of": "2026-08-29T15:21:47+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-08-29T07:38:35+00:00",
+      "age_hours": 7.72,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25868971,
+      "as_of": "2026-08-30T15:25:59+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-08-30T07:39:11+00:00",
+      "age_hours": 7.78,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25876171,
+      "as_of": "2026-08-31T15:30:59+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-08-31T12:23:47+00:00",
+      "age_hours": 3.12,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25883371,
+      "as_of": "2026-09-01T15:36:35+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-09-01T11:38:23+00:00",
+      "age_hours": 3.97,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25890571,
+      "as_of": "2026-09-02T15:41:47+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-09-02T11:38:35+00:00",
+      "age_hours": 4.053333333333334,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25897771,
+      "as_of": "2026-09-03T15:46:59+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-09-03T11:38:47+00:00",
+      "age_hours": 4.136666666666667,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25904971,
+      "as_of": "2026-09-04T15:52:11+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-09-04T11:38:59+00:00",
+      "age_hours": 4.22,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    },
+    {
+      "block": 25912171,
+      "as_of": "2026-09-05T15:57:11+00:00",
+      "nav_usd": 1.0,
+      "updated_at": "2026-09-05T11:39:11+00:00",
+      "age_hours": 4.3,
+      "status": "observed_issuer_related_feed",
+      "independent_nav_usd": null,
+      "actual_nav_gap_pct": null
+    }
+  ],
+  "payment": {
+    "tx_hash": "0x2178cfcb0479263b92a462a52e0c0a02105afbfee56990d843227bd808a888e4",
+    "block": 21588500,
+    "interest_applied_usdc": 152945.202924,
+    "principal_applied_usdc": 673936.577076,
+    "remaining_usdc": 0.0,
+    "reserve_usdc": 15294.520292,
+    "credit_line_cash_in_usdc": 826881.78,
+    "senior_pool_cash_received_usdc": 759585.890714,
+    "transfers": [
+      {
+        "sender": "0x53d2366a9ac3c0271d9af0057355a3a5a272c177",
+        "recipient": "0x5424b911d04f71357468743b24b868db0706048c",
+        "amount_usdc": 826881.78
+      },
+      {
+        "sender": "0x5424b911d04f71357468743b24b868db0706048c",
+        "recipient": "0xb26b42dd5771689d0a7faeea32825ff9710b9c11",
+        "amount_usdc": 826881.78
+      },
+      {
+        "sender": "0xb26b42dd5771689d0a7faeea32825ff9710b9c11",
+        "recipient": "0xe2da0cf4dcee902f74d4949145ea2ec24f0718a4",
+        "amount_usdc": 15294.520292
+      },
+      {
+        "sender": "0xb26b42dd5771689d0a7faeea32825ff9710b9c11",
+        "recipient": "0x8481a6ebaf5c7dabc3f7e09e44a89531fd31f822",
+        "amount_usdc": 759585.890714
+      }
+    ],
+    "attribution": "Amount and timing consistent with GIP-67 backstop; not classified as borrower-originated recovery",
+    "completeness": "One verified transaction, not full cashflow history",
+    "as_of": "2025-01-09T17:46:35+00:00",
+    "matches_endpoint_balance_reduction": true,
+    "endpoint_balance_reduction_usdc": 673936.577076
+  },
+  "backstop": {
+    "total_reported_usd": 1158025,
+    "senior_reported_usd": 759585.89,
+    "backers_reported_usd": 398439.11,
+    "status": "official_reported_claimable_not_all_claims_verified",
+    "source": "https://gov.goldfinch.finance/t/gip-67-new-proposal-for-using-gfi-to-help-with-principal-loss/2010/27"
+  },
+  "latest_outstanding_principal_usdc": 9476063.253407,
+  "latest_block": 25912171,
+  "latest_as_of": "2026-09-05T15:57:11+00:00",
+  "verified_pool_mapping_blocks": [
+    19560000,
+    19660000,
+    19760000,
+    25861771,
+    25868971,
+    25876171,
+    25883371,
+    25890571,
+    25897771,
+    25904971,
+    25912171
+  ],
+  "valid_nav_observations": 8,
+  "independent_nav_matched_pairs": 0,
+  "buidl_actual_nav_gap_pct": null,
+  "lendeast_actual_nav_gap_pct": null,
+  "realized_investor_loss_usd": null,
+  "actual_attack_profit_usd": null,
+  "event_period_pos_normality": null,
+  "conclusion": "Public evidence supports feed readings and a backstop-linked payment; actual economic NAV gap remains unidentified.",
+  "source_audit": {
+    "reviewed_at": "2026-09-06",
+    "sources": [
+      {
+        "url": "https://app.redstone.finance/push-feeds?cryptos=BUIDL_FUNDAMENTAL",
+        "finding": "Listed BUIDL fundamental feed: 0xb9BD795BB71012c0F3cd1D9c9A4c686F2d3524A4. NAV delivery, not an independent portfolio valuation."
+      },
+      {
+        "url": "https://gov.goldfinch.finance/t/gip-67-new-proposal-for-using-gfi-to-help-with-principal-loss/2010/27",
+        "finding": "2025-01-09 Blake West reports backstop amounts claimable: total 1158025 USD, Senior Pool 759585.89, Backers 398439.11. Not a borrower recovery statement or all claims executed."
+      },
+      {
+        "url": "https://forum.arbitrum.foundation/t/securitize-markets-buidl-step-application/23652",
+        "finding": "2024 distributor submission says detailed holdings available upon request for BUIDL holders. No complete independent valuation time series acquired."
+      },
+      {
+        "url": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957/11",
+        "finding": "2024-05-10 statement: portfolio NAV unknown to Warbler. No independently verified later complete NAV series acquired."
+      },
+      {
+        "url": "https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl",
+        "finding": "RFQ route announcement; no matched executable quotes for this collection."
+      }
+    ],
+    "missing": [
+      "BUIDL independent holdings valuation and liabilities at matched timestamps",
+      "Lend East independent portfolio valuation and investor claim allocation",
+      "matched executable prices and complete investor cashflows",
+      "event-period consensus health time series"
+    ],
+    "rpc_limitations": [
+      "Publicnode log archive requires personal token; drpc free log ranges at most 10000 blocks and selected log query unavailable. Selected transaction receipt obtained through block receipts instead. No complete cashflow history claimed."
+    ]
+  },
+  "evidence_sha256": {
+    "sources.json": "3e8741ce90ade67126117e7aabdc1e6a586c3440244a3ce35762421a11873ab5",
+    "credit-event.json": "e1c020ddf241d1b2f6ba604c05bb57e6fc6f19179204f68d039b889d6a449689",
+    "lendeast-disclosure.json": "a83df63fdb2fa4979b730a92c7f40d43eabccce468e2602bdf0590d222d4a331",
+    "history.json": "9bcf50f80e43241d526e7c50d0a7cdfc92283ed9a28a454dd2365257250c1f58",
+    "chain.json": "b05b9f9deb11710c64212d61bf81f3814e28a62e704a141776fb9365daa194e2",
+    "report-excerpts.txt": "c9b90edb937c2cb87fedfb82dfab20ab2f5c03d18348166ce525a9e184cb12dc",
+    "product-source-notes.json": "31c209ef329951840e2f2604e17fd40640c1950c8a383b9baa67e415b8a83a59",
+    "buidl-route-state.json": "81e290a6785bc4796f7476acd6996dd15003ac238195cd8b77842f09de2c4de3",
+    "buidl-verified-state.json": "29948427cb1f9bce71124f87d7f3edc17a24f7e26fec3d05982abb7d59b22187",
+    "buidl-settlement-state.json": "a2a616d3c320f280fa16125e6b45f6852eeb34de0dfa8a9053c9294f1603ab04",
+    "buidl-liquidity-state.json": "1e67393b2a176b6acf9cc1c3a31e06e97741b1a42e5f06d4db1cd4ac53dc9472",
+    "nav-public.json": "d771b94f2762b48e2c80477c5b7ad8f79a450a6beda0d17935f7e23d587ebd9b",
+    "gip67.json": "a5cf2486f93615000d76625ebcbfefb0f1dc41d06bc40d0631240f3c9cff4a4e",
+    "gip67-rest.json": "8882248e7c2adbe817543c4fafca247e10f85bbb3bf86c560ffd938ac1119f7f",
+    "verified-payment.json": "525674f669bd2e6717ae5756be6de84b7539878cada18bcd827dfd0935b66da7",
+    "ITranchedPool.sol": "52c71ebee4e3839f02c3dd99c58e0352f2d85712c3ff5471a9ac27d670881800",
+    "ILoan.sol": "a1c4dd039ae8c1a69a602629b397e9bc2bd38ed9475a46350ba5f61b5563eb12",
+    "nav-source-audit.json": "a546082c9cce2e68d74b0fa8a97aa3ebb3787b868db417a3eddffab9b607984d",
+    "payment-block-receipts.json": "680fe6537d320de0249220125db24a90affeaa11b5e2a2143cc2eb163fad9a7a"
+  }
+}

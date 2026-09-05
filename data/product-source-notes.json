@@ -1,0 +1,26 @@
+[
+  {
+    "product": "BUIDL",
+    "published_at": "2026-02-11",
+    "reviewed_at": "2026-09-06",
+    "url": "https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl",
+    "kind": "official_announcement",
+    "finding": "Securitize facilitates RFQ trades through UniswapX with whitelisted counterparties. Actual executable quotes not collected."
+  },
+  {
+    "product": "Lend East",
+    "published_at": "2024-05-10",
+    "reviewed_at": "2026-09-06",
+    "url": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957/11",
+    "kind": "official_party_statement",
+    "finding": "Warbler Labs states it does not know portfolio NAV. Expected repayment is not measured NAV."
+  },
+  {
+    "product": "Lend East",
+    "published_at": "2024-10-25",
+    "reviewed_at": "2026-09-06",
+    "url": "https://gov.goldfinch.finance/t/actions-against-lend-east/2052",
+    "kind": "official_party_statement",
+    "finding": "Foundation announces another default notice and demand. Not final recovery evidence."
+  }
+]

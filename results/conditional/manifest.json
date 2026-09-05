@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "schema_version": 1,
+    "groups": {
+      "common": {
+        "exposure_usd": {
+          "value": 20000000,
+          "unit": "USD face exposure",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "시나리오 비교 노출. 실제 투자자 보유액·출구 재원 아님."
+        },
+        "market_depth_usd": {
+          "value": 20000000,
+          "unit": "USD face",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "가치에 비례한 가격으로 매입할 수 있다는 가정 상한."
+        },
+        "exit_capacity_usd": {
+          "value": 20000000,
+          "unit": "USD payout",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "상환 또는 담보 대출의 지급 재원 가정."
+        },
+        "ltv": {
+          "value": 0.8,
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "담보 대출에만 적용. 실제 BUIDL/Lend East 시장 LTV 관측 아님."
+        },
+        "capital_apr": {
+          "value": 0.06,
+          "unit": "annual simple rate",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "매입 원금 조달 Actual/365."
+        },
+        "execution_days": {
+          "value": 1,
+          "unit": "days",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "매입부터 출구 정산까지의 시간."
+        },
+        "slippage_bps": {
+          "value": 3,
+          "unit": "bp of fair acquisition value",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "매수 가격 가산."
+        },
+        "fee_bps": {
+          "value": 4,
+          "unit": "bp of payout",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "총 실행 수수료. 별도 고정비와 구분."
+        },
+        "fixed_usd": {
+          "value": 100,
+          "unit": "USD",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "실행 고정비."
+        },
+        "legal_probability": {
+          "value": 0.1,
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "위법 거래에 대한 사후 집행 가능성의 순수 가정."
+        },
+        "legal_loss_fraction": {
+          "value": 0.5,
+          "unit": "fraction of positive gross surplus",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "집행 시 반환/손해배상할 이익 비중 가정. 원금까지 반환하는 위험은 포함하지 않음."
+        },
+        "permissioned_share": {
+          "value": 0.5,
+          "unit": "fraction of exposure",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "법적 회수 비용이 적용되는 노출 비중 가정. 허가 여부가 자동으로 법적 처벌을 뜻하지 않음."
+        },
+        "eligible": {
+          "value": true,
+          "unit": "bool",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "조건부 계산에서 자격 통과 가정. 실제 자격 미검증."
+        },
+        "quote_available": {
+          "value": true,
+          "unit": "bool",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "대용 경제적 가치로 매입 가능한 호가 가정. 실제 호가 미검증."
+        },
+        "exit_open": {
+          "value": true,
+          "unit": "bool",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "기본 조건부 출구 열림 가정. 실제 프로토콜 재현 아님."
+        },
+        "nonrecourse": {
+          "value": true,
+          "unit": "bool",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "담보 대출 뒤 담보 외 추가 상환청구가 없다는 가정. 대출수익성 계산에 필수."
+        }
+      },
+      "treasury": {
+        "exposure_usd": {
+          "value": 190000000,
+          "unit": "USD face",
+          "kind": "report_anchor",
+          "source": "report pp.6,16",
+          "note": "초안의 렌딩 노출 앵커. 독립 검증되지 않아 report_anchor로 분리."
+        },
+        "nav_gap_bps": {
+          "value": 50,
+          "unit": "bp of reference mark",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "시장금리 충격이 아닌 참조 NAV 대비 경제적 가치 괴리. 초안의 상단 스트레스 선택."
+        },
+        "window_days": {
+          "value": 1,
+          "unit": "days",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "B-1의 가상 갱신 지연 창. 공격 성공·NAV 피드 의존관계는 조건부."
+        }
+      },
+      "credit": {
+        "principal_usd": {
+          "value": 10150000,
+          "unit": "USD",
+          "kind": "official_reported",
+          "source": "credit_event",
+          "note": "당시 공지 원금."
+        },
+        "expected_repayment_usd": {
+          "value": 4250000,
+          "unit": "USD",
+          "kind": "official_reported",
+          "source": "credit_event",
+          "note": "당시 약 425만 예상. 최종 회수액 아님."
+        },
+        "exposure_share": {
+          "value": 1,
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "펀드 중 이 대출에 대한 비례 노출. 기본 100%는 대용 풀, 실제 Senior Pool 비중 아님."
+        },
+        "grace_days": {
+          "value": 45,
+          "unit": "days",
+          "kind": "assumption",
+          "source": "report p.8",
+          "note": "초안 주장에 근거한 시나리오 가정. 실제 계약의 확정 NAV 지연으로 확인되지 않음."
+        },
+        "write_down_days": {
+          "value": 120,
+          "unit": "days",
+          "kind": "assumption",
+          "source": "report p.8",
+          "note": "grace 뒤 NAV를 경제적 가치까지 선형 조정하는 모형 가정. 실제 규칙 복제 아님."
+        },
+        "action_day": {
+          "value": 30,
+          "unit": "days since impairment",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "부실 발생 후 매입 시점 가정."
+        },
+        "paid_extension_days": {
+          "value": 0,
+          "unit": "days",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "이미 존재하는 가격창 이후 갱신을 추가 지연시키는 가정 기간."
+        },
+        "delay_cost_per_day": {
+          "value": 10000,
+          "unit": "USD/day",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "추가 지연/공모의 가격 가정. 슬롯 검열 실측값 아님."
+        },
+        "coordination_usd": {
+          "value": 10000,
+          "unit": "USD",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "B-2의 포함·조정·공모 비용 가정. 실제 행위가 불법이라는 판정 아님."
+        }
+      },
+      "consensus": {
+        "staked_eth": {
+          "value": 39700000,
+          "unit": "ETH",
+          "kind": "report_anchor",
+          "source": "report p.8",
+          "note": "초안의 수치이며 현재 실측 아님."
+        },
+        "eth_usd": {
+          "value": 2286.6,
+          "unit": "USD/ETH",
+          "kind": "report_anchor",
+          "source": "report p.8",
+          "note": "동일 초안의 가격 앵커."
+        },
+        "control_fraction": {
+          "value": 0.3333333333333333,
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "기존 지분을 이전받아 통제하는 비중 가정. 신규 예치 시 분모 증가 계산과 구분."
+        },
+        "acquisition_mode": {
+          "value": "existing",
+          "unit": "existing or new_stake",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "신규 예치 모드는 f/(1-f)×기존 지분."
+        },
+        "attack_days": {
+          "value": 1,
+          "unit": "days",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "지분 통제 자본 조달 기간 가정."
+        },
+        "funding_apr": {
+          "value": 0.06,
+          "unit": "annual simple rate",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "지분 자본의 기회/조달 비용."
+        },
+        "penalty_probability": {
+          "value": 0.1,
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "공격 종류별로 검증되지 않은 기대 제재 가능성."
+        },
+        "penalty_fraction": {
+          "value": 0.1,
+          "unit": "fraction of controlled capital",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "조건부 실효 자본 손실률. 기본 1/3 liveness 경로는 inactivity 손실 대용이며 자동 슬래싱 아님."
+        },
+        "coordination_usd": {
+          "value": 100000,
+          "unit": "USD",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "검증자 조정 비용 가정."
+        }
+      },
+      "sampling": {
+        "samples": {
+          "value": 20000,
+          "unit": "count",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "LHS 탐색 표본 수. 실제 공격 발생 확률 아님."
+        },
+        "seed": {
+          "value": 20260823,
+          "unit": "integer",
+          "kind": "report_anchor",
+          "source": "report p.7",
+          "note": "보고서 seed 사용, 원래 분포가 없어 원본 결과 재현은 아님."
+        },
+        "credit_recovery_range": {
+          "value": [
+            0.2,
+            0.8
+          ],
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "균등 주변분포 범위 가정."
+        },
+        "exposure_range": {
+          "value": [
+            2000000,
+            500000000
+          ],
+          "unit": "USD face",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "각 자산 동일 노출 조건 대조를 위한 범위. 실제 시장 규모 분포 아님."
+        },
+        "nav_gap_range_bps": {
+          "value": [
+            1,
+            50
+          ],
+          "unit": "bp",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "국채 NAV 괴리 범위 가정."
+        },
+        "action_day_range": {
+          "value": [
+            0,
+            165
+          ],
+          "unit": "days",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "신용 NAV 경과 시점 가정."
+        },
+        "permissioned_share_range": {
+          "value": [
+            0.3,
+            0.9
+          ],
+          "unit": "fraction",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "법적 회수 적용 노출 비중 탐색."
+        },
+        "credit_exit": {
+          "value": "redemption",
+          "unit": "redemption or lending",
+          "kind": "assumption",
+          "source": "declared scenario",
+          "note": "B-2/B-3에 동일하게 적용하는 출구 선택."
+        }
+      }
+    }
+  },
+  "runtime_samples": 20000,
+  "seed": 20260823,
+  "interpretation": "conditional_economic_model_not_report_percentage_replication",
+  "report_targets_used_for_calibration": false,
+  "control_overrides": {
+    "credit_lending": {
+      "sampling.credit_exit": "lending"
+    },
+    "closed_exit": {
+      "common.exit_open": false
+    },
+    "nav_fully_updated": {
+      "credit.action_day": 165
+    },
+    "zero_stake_loss": {
+      "consensus.penalty_probability": 0
+    },
+    "two_thirds_control": {
+      "consensus.control_fraction": 0.6666666666666666
+    },
+    "instant_credit_mark": {
+      "credit.grace_days": 0,
+      "credit.write_down_days": 1e-06
+    },
+    "paid_10day_extension": {
+      "credit.paid_extension_days": 10
+    },
+    "ten_percent_credit_exposure": {
+      "credit.exposure_share": 0.1
+    }
+  },
+  "point_results": [
+    {
+      "scenario": "B-1",
+      "exit_type": "lending",
+      "requested_face_usd": 190000000,
+      "executed_face_usd": 20000000,
+      "fair_value_per_face": 0.995,
+      "consumer_mark_per_face": 1,
+      "nav_gap_bps": 50.00000000000004,
+      "nav_evaluation_day": null,
+      "market_value_gap_usd": 950000.0000000008,
+      "acquisition_usd": 19905970.0,
+      "payout_usd": 16000000.0,
+      "pfc_usd": -3905970.0,
+      "execution_fees_usd": 6400.0,
+      "asset_financing_usd": 3272.2142465753423,
+      "expected_enforcement_usd": 0.0,
+      "application_fixed_usd": 100,
+      "route_cost_usd": 307667538.08219177,
+      "coc_usd": 307677310.29643834,
+      "net_profit_usd": -311583280.29643834,
+      "cost_profit_ratio": null,
+      "profitable_under_assumptions": false,
+      "model_verdict": "closed_under_assumptions",
+      "blocked_reason": "",
+      "evidence_verdict": "not_empirically_identified",
+      "stake_capital_usd": 30259340000.0,
+      "stake_funding_usd": 4974138.082191781,
+      "expected_stake_loss_usd": 302593400.0,
+      "consensus_coordination_usd": 100000,
+      "consensus_cost_usd": 307667538.08219177,
+      "capital_is_not_expense": true,
+      "capital_required_usd": 30279245970.0,
+      "optimistic_nav_capture_bound_usd": 100000.00000000009,
+      "bound_below_consensus_cost": true,
+      "capital_profit_ratio": null,
+      "break_even_face_usd": null,
+      "break_even_reachable_with_caps": false,
+      "exit_capacity_face_usd": 20000000,
+      "finality_status": "consensus_counterfactual_not_simulated",
+      "residual_loss_locus": "lender_after_collateral_seizure",
+      "counterparty_loss_before_fees_usd": 0
+    },
+    {
+      "scenario": "B-2",
+      "exit_type": "redemption",
+      "requested_face_usd": 20000000,
+      "executed_face_usd": 20000000,
+      "fair_value_per_face": 0.41871921182266014,
+      "consumer_mark_per_face": 1.0,
+      "nav_gap_bps": 5812.807881773399,
+      "nav_evaluation_day": 31,
+      "market_value_gap_usd": 11625615.763546797,
+      "acquisition_usd": 8376896.551724139,
+      "payout_usd": 20000000.0,
+      "pfc_usd": 11623103.44827586,
+      "execution_fees_usd": 8000.0,
+      "asset_financing_usd": 1377.0240906943789,
+      "expected_enforcement_usd": 290577.5862068965,
+      "application_fixed_usd": 100,
+      "route_cost_usd": 10000,
+      "coc_usd": 310054.6102975909,
+      "net_profit_usd": 11313048.83797827,
+      "cost_profit_ratio": 0.026675716315988186,
+      "profitable_under_assumptions": true,
+      "model_verdict": "open_under_assumptions",
+      "blocked_reason": "",
+      "evidence_verdict": "not_empirically_identified",
+      "stake_capital_usd": 0,
+      "stake_funding_usd": 0,
+      "expected_stake_loss_usd": 0,
+      "consensus_coordination_usd": 0,
+      "consensus_cost_usd": 0,
+      "capital_is_not_expense": true,
+      "capital_required_usd": 8376896.551724139,
+      "optimistic_nav_capture_bound_usd": 11625615.763546797,
+      "bound_below_consensus_cost": null,
+      "capital_profit_ratio": null,
+      "break_even_face_usd": 17839.560610780307,
+      "break_even_reachable_with_caps": true,
+      "exit_capacity_face_usd": 20000000,
+      "finality_status": "assumed_normal_not_simulated",
+      "residual_loss_locus": "redemption_counterparty_mark_loss",
+      "counterparty_loss_before_fees_usd": 11625615.763546797
+    },
+    {
+      "scenario": "B-3",
+      "exit_type": "redemption",
+      "requested_face_usd": 20000000,
+      "executed_face_usd": 20000000,
+      "fair_value_per_face": 0.41871921182266014,
+      "consumer_mark_per_face": 1.0,
+      "nav_gap_bps": 5812.807881773399,
+      "nav_evaluation_day": 31,
+      "market_value_gap_usd": 11625615.763546797,
+      "acquisition_usd": 8376896.551724139,
+      "payout_usd": 20000000.0,
+      "pfc_usd": 11623103.44827586,
+      "execution_fees_usd": 8000.0,
+      "asset_financing_usd": 1377.0240906943789,
+      "expected_enforcement_usd": 290577.5862068965,
+      "application_fixed_usd": 100,
+      "route_cost_usd": 307667538.08219177,
+      "coc_usd": 307967592.6924894,
+      "net_profit_usd": -296344489.2442135,
+      "cost_profit_ratio": 26.496158626048576,
+      "profitable_under_assumptions": false,
+      "model_verdict": "closed_under_assumptions",
+      "blocked_reason": "",
+      "evidence_verdict": "not_empirically_identified",
+      "stake_capital_usd": 30259340000.0,
+      "stake_funding_usd": 4974138.082191781,
+      "expected_stake_loss_usd": 302593400.0,
+      "consensus_coordination_usd": 100000,
+      "consensus_cost_usd": 307667538.08219177,
+      "capital_is_not_expense": true,
+      "capital_required_usd": 30267716896.551723,
+      "optimistic_nav_capture_bound_usd": 11625615.763546797,
+      "bound_below_consensus_cost": true,
+      "capital_profit_ratio": 2603.378704720088,
+      "break_even_face_usd": 543431235.4002851,
+      "break_even_reachable_with_caps": false,
+      "exit_capacity_face_usd": 20000000,
+      "finality_status": "consensus_counterfactual_not_simulated",
+      "residual_loss_locus": "redemption_counterparty_mark_loss",
+      "counterparty_loss_before_fees_usd": 11625615.763546797
+    }
+  ],
+  "thresholds": [
+    {
+      "scenario": "B-1",
+      "break_even_face_usd": null,
+      "reachable_with_caps": false,
+      "break_even_nav_gap_bps": null,
+      "break_even_recovery_ratio": null,
+      "meaning": "No sign-changing root in the tested domain is null; not proof of universal safety"
+    },
+    {
+      "scenario": "B-2",
+      "break_even_face_usd": 17839.560610780307,
+      "reachable_with_caps": true,
+      "break_even_nav_gap_bps": null,
+      "break_even_recovery_ratio": 0.9986038000953095,
+      "meaning": "No sign-changing root in the tested domain is null; not proof of universal safety"
+    },
+    {
+      "scenario": "B-3",
+      "break_even_face_usd": 543431235.4002851,
+      "reachable_with_caps": false,
+      "break_even_nav_gap_bps": null,
+      "break_even_recovery_ratio": null,
+      "meaning": "No sign-changing root in the tested domain is null; not proof of universal safety"
+    }
+  ],
+  "sample_summary": [
+    {
+      "scenario": "B-1",
+      "samples": 20000,
+      "positive_sample_fraction": 0.0,
+      "median_net_profit_usd": -311630389.3751379,
+      "interpretation": "declared_parameter_space_fraction_not_attack_probability",
+      "original_report_percentage_reproduced": false
+    },
+    {
+      "scenario": "B-2",
+      "samples": 20000,
+      "positive_sample_fraction": 0.99195,
+      "median_net_profit_usd": 5379936.886259702,
+      "interpretation": "declared_parameter_space_fraction_not_attack_probability",
+      "original_report_percentage_reproduced": false
+    },
+    {
+      "scenario": "B-3",
+      "samples": 20000,
+      "positive_sample_fraction": 0.0,
+      "median_net_profit_usd": -302277601.1959321,
+      "interpretation": "declared_parameter_space_fraction_not_attack_probability",
+      "original_report_percentage_reproduced": false
+    }
+  ],
+  "parameter_distribution": "independent uniform marginals; Latin hypercube; bounded by config",
+  "evidence_checksums": {
+    "sources.json": "3e8741ce90ade67126117e7aabdc1e6a586c3440244a3ce35762421a11873ab5",
+    "credit-event.json": "e1c020ddf241d1b2f6ba604c05bb57e6fc6f19179204f68d039b889d6a449689",
+    "lendeast-disclosure.json": "a83df63fdb2fa4979b730a92c7f40d43eabccce468e2602bdf0590d222d4a331",
+    "history.json": "9bcf50f80e43241d526e7c50d0a7cdfc92283ed9a28a454dd2365257250c1f58",
+    "chain.json": "b05b9f9deb11710c64212d61bf81f3814e28a62e704a141776fb9365daa194e2",
+    "report-excerpts.txt": "c9b90edb937c2cb87fedfb82dfab20ab2f5c03d18348166ce525a9e184cb12dc",
+    "product-source-notes.json": "31c209ef329951840e2f2604e17fd40640c1950c8a383b9baa67e415b8a83a59"
+  },
+  "code_input_sha256": {
+    "run.py": "3503a5e97a08a921a319806d289bf00b88f5e35f3e1b31a22da01226eedc2545",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/inputs.py": "052065191a9f24662e102cf666fb8842a9b62bf4ed2797cdf673bbe4eab5ab4c",
+    "src/model.py": "22d64449423d7ca75ca20017f4e4d06c8639c892cb38264c86ade43645681682",
+    "src/products.py": "981a45ae029749923326d1f4065a39bfed0eda83774c7d69721f71f44745cb4f",
+    "src/reporting.py": "765e47ae4728cbe186431a36c7aeebf76517088df889cebfc899d5247e85d4a3",
+    "src/sampling.py": "e551a62bed3dd517a206ea42d71332dbc522e62d3fc89cbb4db1a40a07f33546",
+    "config/scenarios.json": "735812328b3f5f114d66855bca491f174e48f45e71ac0f462cb0a99ea909f31b",
+    "data/chain.json": "b05b9f9deb11710c64212d61bf81f3814e28a62e704a141776fb9365daa194e2",
+    "data/checksums.json": "09f78fe420a70baf26a3fa9387c9ea5b965d4d64d4e28051d4239431ee5b2b0f",
+    "data/credit-event.json": "e1c020ddf241d1b2f6ba604c05bb57e6fc6f19179204f68d039b889d6a449689",
+    "data/history.json": "9bcf50f80e43241d526e7c50d0a7cdfc92283ed9a28a454dd2365257250c1f58",
+    "data/lendeast-disclosure.json": "a83df63fdb2fa4979b730a92c7f40d43eabccce468e2602bdf0590d222d4a331",
+    "data/product-source-notes.json": "31c209ef329951840e2f2604e17fd40640c1950c8a383b9baa67e415b8a83a59",
+    "data/report-excerpts.txt": "c9b90edb937c2cb87fedfb82dfab20ab2f5c03d18348166ce525a9e184cb12dc",
+    "data/sources.json": "3e8741ce90ade67126117e7aabdc1e6a586c3440244a3ce35762421a11873ab5"
+  }
+}

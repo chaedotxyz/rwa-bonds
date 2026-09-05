@@ -1,0 +1,46 @@
+﻿group,parameter,value,unit,kind,source,note
+common,exposure_usd,20000000,USD face exposure,assumption,declared scenario,시나리오 비교 노출. 실제 투자자 보유액·출구 재원 아님.
+common,market_depth_usd,20000000,USD face,assumption,declared scenario,가치에 비례한 가격으로 매입할 수 있다는 가정 상한.
+common,exit_capacity_usd,20000000,USD payout,assumption,declared scenario,상환 또는 담보 대출의 지급 재원 가정.
+common,ltv,0.8,fraction,assumption,declared scenario,담보 대출에만 적용. 실제 BUIDL/Lend East 시장 LTV 관측 아님.
+common,capital_apr,0.06,annual simple rate,assumption,declared scenario,매입 원금 조달 Actual/365.
+common,execution_days,1,days,assumption,declared scenario,매입부터 출구 정산까지의 시간.
+common,slippage_bps,3,bp of fair acquisition value,assumption,declared scenario,매수 가격 가산.
+common,fee_bps,4,bp of payout,assumption,declared scenario,총 실행 수수료. 별도 고정비와 구분.
+common,fixed_usd,100,USD,assumption,declared scenario,실행 고정비.
+common,legal_probability,0.1,fraction,assumption,declared scenario,위법 거래에 대한 사후 집행 가능성의 순수 가정.
+common,legal_loss_fraction,0.5,fraction of positive gross surplus,assumption,declared scenario,집행 시 반환/손해배상할 이익 비중 가정. 원금까지 반환하는 위험은 포함하지 않음.
+common,permissioned_share,0.5,fraction of exposure,assumption,declared scenario,법적 회수 비용이 적용되는 노출 비중 가정. 허가 여부가 자동으로 법적 처벌을 뜻하지 않음.
+common,eligible,True,bool,assumption,declared scenario,조건부 계산에서 자격 통과 가정. 실제 자격 미검증.
+common,quote_available,True,bool,assumption,declared scenario,대용 경제적 가치로 매입 가능한 호가 가정. 실제 호가 미검증.
+common,exit_open,True,bool,assumption,declared scenario,기본 조건부 출구 열림 가정. 실제 프로토콜 재현 아님.
+common,nonrecourse,True,bool,assumption,declared scenario,담보 대출 뒤 담보 외 추가 상환청구가 없다는 가정. 대출수익성 계산에 필수.
+treasury,exposure_usd,190000000,USD face,report_anchor,"report pp.6,16",초안의 렌딩 노출 앵커. 독립 검증되지 않아 report_anchor로 분리.
+treasury,nav_gap_bps,50,bp of reference mark,assumption,declared scenario,시장금리 충격이 아닌 참조 NAV 대비 경제적 가치 괴리. 초안의 상단 스트레스 선택.
+treasury,window_days,1,days,assumption,declared scenario,B-1의 가상 갱신 지연 창. 공격 성공·NAV 피드 의존관계는 조건부.
+credit,principal_usd,10150000,USD,official_reported,credit_event,당시 공지 원금.
+credit,expected_repayment_usd,4250000,USD,official_reported,credit_event,당시 약 425만 예상. 최종 회수액 아님.
+credit,exposure_share,1,fraction,assumption,declared scenario,"펀드 중 이 대출에 대한 비례 노출. 기본 100%는 대용 풀, 실제 Senior Pool 비중 아님."
+credit,grace_days,45,days,assumption,report p.8,초안 주장에 근거한 시나리오 가정. 실제 계약의 확정 NAV 지연으로 확인되지 않음.
+credit,write_down_days,120,days,assumption,report p.8,grace 뒤 NAV를 경제적 가치까지 선형 조정하는 모형 가정. 실제 규칙 복제 아님.
+credit,action_day,30,days since impairment,assumption,declared scenario,부실 발생 후 매입 시점 가정.
+credit,paid_extension_days,0,days,assumption,declared scenario,이미 존재하는 가격창 이후 갱신을 추가 지연시키는 가정 기간.
+credit,delay_cost_per_day,10000,USD/day,assumption,declared scenario,추가 지연/공모의 가격 가정. 슬롯 검열 실측값 아님.
+credit,coordination_usd,10000,USD,assumption,declared scenario,B-2의 포함·조정·공모 비용 가정. 실제 행위가 불법이라는 판정 아님.
+consensus,staked_eth,39700000,ETH,report_anchor,report p.8,초안의 수치이며 현재 실측 아님.
+consensus,eth_usd,2286.6,USD/ETH,report_anchor,report p.8,동일 초안의 가격 앵커.
+consensus,control_fraction,0.3333333333333333,fraction,assumption,declared scenario,기존 지분을 이전받아 통제하는 비중 가정. 신규 예치 시 분모 증가 계산과 구분.
+consensus,acquisition_mode,existing,existing or new_stake,assumption,declared scenario,신규 예치 모드는 f/(1-f)×기존 지분.
+consensus,attack_days,1,days,assumption,declared scenario,지분 통제 자본 조달 기간 가정.
+consensus,funding_apr,0.06,annual simple rate,assumption,declared scenario,지분 자본의 기회/조달 비용.
+consensus,penalty_probability,0.1,fraction,assumption,declared scenario,공격 종류별로 검증되지 않은 기대 제재 가능성.
+consensus,penalty_fraction,0.1,fraction of controlled capital,assumption,declared scenario,조건부 실효 자본 손실률. 기본 1/3 liveness 경로는 inactivity 손실 대용이며 자동 슬래싱 아님.
+consensus,coordination_usd,100000,USD,assumption,declared scenario,검증자 조정 비용 가정.
+sampling,samples,20000,count,assumption,declared scenario,LHS 탐색 표본 수. 실제 공격 발생 확률 아님.
+sampling,seed,20260823,integer,report_anchor,report p.7,"보고서 seed 사용, 원래 분포가 없어 원본 결과 재현은 아님."
+sampling,credit_recovery_range,"[0.2, 0.8]",fraction,assumption,declared scenario,균등 주변분포 범위 가정.
+sampling,exposure_range,"[2000000, 500000000]",USD face,assumption,declared scenario,각 자산 동일 노출 조건 대조를 위한 범위. 실제 시장 규모 분포 아님.
+sampling,nav_gap_range_bps,"[1, 50]",bp,assumption,declared scenario,국채 NAV 괴리 범위 가정.
+sampling,action_day_range,"[0, 165]",days,assumption,declared scenario,신용 NAV 경과 시점 가정.
+sampling,permissioned_share_range,"[0.3, 0.9]",fraction,assumption,declared scenario,법적 회수 적용 노출 비중 탐색.
+sampling,credit_exit,redemption,redemption or lending,assumption,declared scenario,B-2/B-3에 동일하게 적용하는 출구 선택.

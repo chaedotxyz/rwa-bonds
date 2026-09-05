@@ -1,0 +1,34 @@
+{
+  "reviewed_at": "2026-09-06",
+  "sources": [
+    {
+      "url": "https://app.redstone.finance/push-feeds?cryptos=BUIDL_FUNDAMENTAL",
+      "finding": "Listed BUIDL fundamental feed: 0xb9BD795BB71012c0F3cd1D9c9A4c686F2d3524A4. NAV delivery, not an independent portfolio valuation."
+    },
+    {
+      "url": "https://gov.goldfinch.finance/t/gip-67-new-proposal-for-using-gfi-to-help-with-principal-loss/2010/27",
+      "finding": "2025-01-09 Blake West reports backstop amounts claimable: total 1158025 USD, Senior Pool 759585.89, Backers 398439.11. Not a borrower recovery statement or all claims executed."
+    },
+    {
+      "url": "https://forum.arbitrum.foundation/t/securitize-markets-buidl-step-application/23652",
+      "finding": "2024 distributor submission says detailed holdings available upon request for BUIDL holders. No complete independent valuation time series acquired."
+    },
+    {
+      "url": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957/11",
+      "finding": "2024-05-10 statement: portfolio NAV unknown to Warbler. No independently verified later complete NAV series acquired."
+    },
+    {
+      "url": "https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl",
+      "finding": "RFQ route announcement; no matched executable quotes for this collection."
+    }
+  ],
+  "missing": [
+    "BUIDL independent holdings valuation and liabilities at matched timestamps",
+    "Lend East independent portfolio valuation and investor claim allocation",
+    "matched executable prices and complete investor cashflows",
+    "event-period consensus health time series"
+  ],
+  "rpc_limitations": [
+    "Publicnode log archive requires personal token; drpc free log ranges at most 10000 blocks and selected log query unavailable. Selected transaction receipt obtained through block receipts instead. No complete cashflow history claimed."
+  ]
+}

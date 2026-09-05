@@ -1,0 +1,254 @@
+{
+  "rpc": "https://ethereum-rpc.publicnode.com",
+  "block_number": 25911392,
+  "block_hash": "0x1c6eb11d31ba78f1ade5eabdf4c1782c3280bce7460474640f1e5ed0160c986b",
+  "block_timestamp": 1788614483,
+  "retrieved_at": "2026-09-05T13:21:54.316346+00:00",
+  "calls": [
+    {
+      "address": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+      "signature": "totalSupply()",
+      "data": "0x18160ddd",
+      "result": "0x0000000000000000000000000000000000000000000000000000c0c1fa29e38d",
+      "error": null
+    },
+    {
+      "address": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+      "signature": "decimals()",
+      "data": "0x313ce567",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000006",
+      "error": null
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "availableLiquidity()",
+      "data": "0x74375359",
+      "result": null,
+      "error": "{'code': 3, 'message': 'execution reverted', 'data': '0x'}"
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "liquidityProvider()",
+      "data": "0x5b8bec55",
+      "result": null,
+      "error": "{'code': 3, 'message': 'execution reverted', 'data': '0x'}"
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "liquidity()",
+      "data": "0x1a686502",
+      "result": "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "error": null
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "liquidityToken()",
+      "data": "0x43cd8f7e",
+      "result": null,
+      "error": "{'code': 3, 'message': 'execution reverted', 'data': '0x'}"
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "paused()",
+      "data": "0x5c975abb",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "asset()",
+      "data": "0x38d52e0f",
+      "result": "0x0000000000000000000000007712c34205737192402172409a8f7ccef8aa2aec",
+      "error": null
+    },
+    {
+      "address": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+      "signature": "calculateLiquidityTokenAmount(uint256)",
+      "data": "0x5e345e7300000000000000000000000000000000000000000000000000000000000f4240",
+      "result": null,
+      "error": "{'code': 3, 'message': 'execution reverted', 'data': '0x'}"
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "assets()",
+      "data": "0x71a97305",
+      "result": "0x0000000000000000000000000000000000000000000000000000206106452c56",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "sharePrice()",
+      "data": "0x87269729",
+      "result": "0x0000000000000000000000000000000000000000000000000d1b5a78f21284a7",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "totalLoansOutstanding()",
+      "data": "0xed80c850",
+      "result": "0x00000000000000000000000000000000000000000000000000002fed67d0e67c",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "totalWritedowns()",
+      "data": "0xa6f4487e",
+      "result": "0x00000000000000000000000000000000000000000000000000000f8c618bba26",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "usdcAvailable()",
+      "data": "0x242d68c2",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "sharesOutstanding()",
+      "data": "0x2f8f68df",
+      "result": "0x0000000000000000000000000000000000000000001f1d81f6d1211ca67fc0e2",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "paused()",
+      "data": "0x5c975abb",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+      "signature": "epochDuration()",
+      "data": "0x4ff0876a",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000127500",
+      "error": null
+    },
+    {
+      "address": "0xb26b42dd5771689d0a7faeea32825ff9710b9c11",
+      "signature": "creditLine()",
+      "data": "0x47195e13",
+      "result": "0x0000000000000000000000005424b911d04f71357468743b24b868db0706048c",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "balance()",
+      "data": "0xb69ef8a8",
+      "result": "0x0000000000000000000000000000000000000000000000000000089e5162539f",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "limit()",
+      "data": "0xa4d66daf",
+      "result": "0x0000000000000000000000000000000000000000000000000000093b3b24fc00",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "interestApr()",
+      "data": "0xb3969992",
+      "result": "0x000000000000000000000000000000000000000000000000016345785d8a0000",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "interestOwed()",
+      "data": "0x21856b36",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "principalOwed()",
+      "data": "0x19350114",
+      "result": "0x0000000000000000000000000000000000000000000000000000089e5162539f",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "lastFullPaymentTime()",
+      "data": "0xce78290d",
+      "result": "0x00000000000000000000000000000000000000000000000000000000660d9bb2",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "termEndTime()",
+      "data": "0x64fb2d95",
+      "result": "0x00000000000000000000000000000000000000000000000000000000660d9bb2",
+      "error": null
+    },
+    {
+      "address": "0x5424b911d04f71357468743b24b868db0706048c",
+      "signature": "totalInterestPaid()",
+      "data": "0x8c0243e7",
+      "result": null,
+      "error": "{'code': 3, 'message': 'execution reverted', 'data': '0x'}"
+    },
+    {
+      "address": "0x538473c3a69da2b305cf11a40cf2f3904de8db5f",
+      "signature": "creditLine()",
+      "data": "0x47195e13",
+      "result": "0x000000000000000000000000d6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "balance()",
+      "data": "0xb69ef8a8",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "limit()",
+      "data": "0xa4d66daf",
+      "result": "0x000000000000000000000000000000000000000000000000000001ef2710c814",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "interestApr()",
+      "data": "0xb3969992",
+      "result": "0x00000000000000000000000000000000000000000000000001df9dc8e4ad8000",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "interestOwed()",
+      "data": "0x21856b36",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "principalOwed()",
+      "data": "0x19350114",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "lastFullPaymentTime()",
+      "data": "0xce78290d",
+      "result": "0x000000000000000000000000000000000000000000000000000000006760b92f",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "termEndTime()",
+      "data": "0x64fb2d95",
+      "result": "0x000000000000000000000000000000000000000000000000000000006760b92f",
+      "error": null
+    },
+    {
+      "address": "0xd6b3f126b1cb000e8a26fdc305b6de13f3d0156e",
+      "signature": "totalInterestPaid()",
+      "data": "0x8c0243e7",
+      "result": null,
+      "error": "{'code': 3, 'message': 'execution reverted', 'data': '0x'}"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+﻿product,metric,value,unit,kind,as_of,block,scope,status
+BUIDL Ethereum,token_supply,274807252.87,BUIDL,observed,2024-04-01T09:10:35+00:00,19560000,Ethereum only; not all-chain AUM or market NAV,observed
+Lend East,credit_line_balance(),10149999.830483,USDC,observed,2024-04-01T09:10:35+00:00,19560000,contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json,observed
+Lend East,credit_line_principalOwed(),0.0,USDC,observed,2024-04-01T09:10:35+00:00,19560000,contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json,observed
+Goldfinch Senior Pool context,sharePrice(),1.16670427146582,USDC/FIDU,observed,2024-04-01T09:10:35+00:00,19560000,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,usdcAvailable(),147272.889982,USDC,observed,2024-04-01T09:10:35+00:00,19560000,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,totalWritedowns(),3103642.4969,USDC,observed,2024-04-01T09:10:35+00:00,19560000,aggregate pool; not Lend East alone,observed
+BUIDL Ethereum,token_supply,293464382.52,BUIDL,observed,2024-04-15T09:24:11+00:00,19660000,Ethereum only; not all-chain AUM or market NAV,observed
+Lend East,credit_line_balance(),10149999.830483,USDC,observed,2024-04-15T09:24:11+00:00,19660000,contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json,observed
+Lend East,credit_line_principalOwed(),10149999.830483,USDC,observed,2024-04-15T09:24:11+00:00,19660000,contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json,observed
+Goldfinch Senior Pool context,sharePrice(),1.1676083917511442,USDC/FIDU,observed,2024-04-15T09:24:11+00:00,19660000,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,usdcAvailable(),51570.440328,USDC,observed,2024-04-15T09:24:11+00:00,19660000,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,totalWritedowns(),3103642.4969,USDC,observed,2024-04-15T09:24:11+00:00,19660000,aggregate pool; not Lend East alone,observed
+BUIDL Ethereum,token_supply,349430246.52,BUIDL,observed,2024-04-29T09:13:11+00:00,19760000,Ethereum only; not all-chain AUM or market NAV,observed
+Lend East,credit_line_balance(),10149999.830483,USDC,observed,2024-04-29T09:13:11+00:00,19760000,contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json,observed
+Lend East,credit_line_principalOwed(),10149999.830483,USDC,observed,2024-04-29T09:13:11+00:00,19760000,contract accounting; not cash recovery or NAV; same-block mapping re-collected in data/nav-public.json,observed
+Goldfinch Senior Pool context,sharePrice(),1.1709278890435795,USDC/FIDU,observed,2024-04-29T09:13:11+00:00,19760000,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,usdcAvailable(),60670.229182,USDC,observed,2024-04-29T09:13:11+00:00,19760000,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,totalWritedowns(),3162027.720889,USDC,observed,2024-04-29T09:13:11+00:00,19760000,aggregate pool; not Lend East alone,observed
+BUIDL Ethereum,token_supply,211939358.270349,BUIDL,observed,2026-09-05T13:21:23+00:00,25911392,Ethereum only; not all-chain AUM or market NAV,observed
+Lend East,credit_line_balance(),9476063.253407,USDC,observed,2026-09-05T13:21:23+00:00,25911392,contract accounting; not cash recovery or NAV; same-block pool mapping,observed
+Lend East,credit_line_principalOwed(),9476063.253407,USDC,observed,2026-09-05T13:21:23+00:00,25911392,contract accounting; not cash recovery or NAV; same-block pool mapping,observed
+Goldfinch Senior Pool context,sharePrice(),0.9444480223681261,USDC/FIDU,observed,2026-09-05T13:21:23+00:00,25911392,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,usdcAvailable(),0.0,USDC,observed,2026-09-05T13:21:23+00:00,25911392,aggregate pool; not Lend East alone,observed
+Goldfinch Senior Pool context,totalWritedowns(),17095606.38519,USDC,observed,2026-09-05T13:21:23+00:00,25911392,aggregate pool; not Lend East alone,observed

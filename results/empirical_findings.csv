@@ -1,0 +1,14 @@
+﻿id,product,value,unit,status,interpretation,source
+LE_EXPECTED_SHORTFALL,Lend East,5900000,USD,derived_from_official_report,"2024-04-02 expected shortfall, not realized loss",https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957
+LE_EXPECTED_SHORTFALL_PCT,Lend East,58.128078817733986,percent,derived_from_official_report,Expected shortfall / reported principal; not actual NAV discount,https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957
+LE_OUTSTANDING_PRINCIPAL,Lend East,9476063.253407,USDC,observed,Unpaid principal recorded at latest saved block,data/chain.json
+LE_DAYS_AFTER_TERM_END,Lend East,884.7989004629629,days,derived_from_observations,Time since contract term end at snapshot with unpaid principal; not NAV lag or continuous default proof,data/chain.json
+LE_BALANCE_CHANGE,Lend East,-673936.5770760011,USDC,derived_from_observations,Last minus first recorded credit-line balance; not verified cash recovery,data/history.json; data/chain.json
+BUIDL_ROUTE_CEILING_19660000,BUIDL,19500000.0,USDC,derived_from_observations,Necessary-condition ceiling at block 19660000; eligible access and executable price not established,data/buidl-route-state.json
+BUIDL_ROUTE_CEILING_25911544,BUIDL,0.0,USDC,derived_from_observations,Necessary-condition ceiling at block 25911544; eligible access and executable price not established,data/buidl-route-state.json
+BUIDL_actual_nav_gap,BUIDL,,USD,not_identified,Missing matched valuation/execution data or consensus health evidence; not zero,docs/empirical-method.md
+BUIDL_realized_trade_profit,BUIDL,,USD,not_identified,Missing matched valuation/execution data or consensus health evidence; not zero,docs/empirical-method.md
+BUIDL_normal_pos_during_event,BUIDL,,boolean,not_identified,Missing matched valuation/execution data or consensus health evidence; not zero,docs/empirical-method.md
+Lend East_actual_nav_gap,Lend East,,USD,not_identified,Missing matched valuation/execution data or consensus health evidence; not zero,docs/empirical-method.md
+Lend East_realized_trade_profit,Lend East,,USD,not_identified,Missing matched valuation/execution data or consensus health evidence; not zero,docs/empirical-method.md
+Lend East_normal_pos_during_event,Lend East,,boolean,not_identified,Missing matched valuation/execution data or consensus health evidence; not zero,docs/empirical-method.md

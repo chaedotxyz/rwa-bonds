@@ -1,0 +1,11 @@
+{
+  "source": "https://gov.goldfinch.finance/t/update-on-lend-east-pool/1957",
+  "source_file": "lendeast-disclosure.json",
+  "published_at": "2024-04-02T00:15:00.951Z",
+  "principal_usd": 10150000,
+  "expected_repayment_usd": 4250000,
+  "maturity_date": "2024-04-03",
+  "prior_oriente_disclosure_date": "2023-01-03",
+  "status": "reported_expectation_not_realized_recovery",
+  "pool_address": "0xb26b42dd5771689d0a7faeea32825ff9710b9c11"
+}

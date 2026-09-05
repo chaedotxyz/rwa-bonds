@@ -1,0 +1,174 @@
+{
+  "rpc": "https://eth.drpc.org",
+  "retrieved_at": "2026-09-05T13:29:48.050300+00:00",
+  "snapshots": [
+    {
+      "block_number": 19560000,
+      "block_hash": "0xb04ca190a7cc1ff4b29a0f3abc969339ed1d818c1427db54bde3e8b910f6f1d2",
+      "block_timestamp": 1711962635,
+      "calls": [
+        {
+          "address": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+          "signature": "totalSupply()",
+          "data": "0x18160ddd",
+          "result": "0x0000000000000000000000000000000000000000000000000000f9ef8cb06370",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "sharePrice()",
+          "data": "0x87269729",
+          "result": "0x0000000000000000000000000000000000000000000000001030f75a7aa6af24",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "totalWritedowns()",
+          "data": "0xa6f4487e",
+          "result": "0x000000000000000000000000000000000000000000000000000002d29f822f84",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "assets()",
+          "data": "0x71a97305",
+          "result": "0x00000000000000000000000000000000000000000000000000003638b0c638f3",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "usdcAvailable()",
+          "data": "0x242d68c2",
+          "result": "0x000000000000000000000000000000000000000000000000000000224a25f67e",
+          "error": null
+        },
+        {
+          "address": "0x5424b911d04f71357468743b24b868db0706048c",
+          "signature": "balance()",
+          "data": "0xb69ef8a8",
+          "result": "0x0000000000000000000000000000000000000000000000000000093b3b2265d3",
+          "error": null
+        },
+        {
+          "address": "0x5424b911d04f71357468743b24b868db0706048c",
+          "signature": "principalOwed()",
+          "data": "0x19350114",
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "error": null
+        }
+      ]
+    },
+    {
+      "block_number": 19660000,
+      "block_hash": "0x40d9c193f66ebb28c31e75308a329a2a677d741dc794ff9bbc95d36eb2c4bc91",
+      "block_timestamp": 1713173051,
+      "calls": [
+        {
+          "address": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+          "signature": "totalSupply()",
+          "data": "0x18160ddd",
+          "result": "0x00000000000000000000000000000000000000000000000000010ae780463ac0",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "sharePrice()",
+          "data": "0x87269729",
+          "result": "0x00000000000000000000000000000000000000000000000010342da563179328",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "totalWritedowns()",
+          "data": "0xa6f4487e",
+          "result": "0x000000000000000000000000000000000000000000000000000002d29f822f84",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "assets()",
+          "data": "0x71a97305",
+          "result": "0x000000000000000000000000000000000000000000000000000036226876baf1",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "usdcAvailable()",
+          "data": "0x242d68c2",
+          "result": "0x0000000000000000000000000000000000000000000000000000000c01d67888",
+          "error": null
+        },
+        {
+          "address": "0x5424b911d04f71357468743b24b868db0706048c",
+          "signature": "balance()",
+          "data": "0xb69ef8a8",
+          "result": "0x0000000000000000000000000000000000000000000000000000093b3b2265d3",
+          "error": null
+        },
+        {
+          "address": "0x5424b911d04f71357468743b24b868db0706048c",
+          "signature": "principalOwed()",
+          "data": "0x19350114",
+          "result": "0x0000000000000000000000000000000000000000000000000000093b3b2265d3",
+          "error": null
+        }
+      ]
+    },
+    {
+      "block_number": 19760000,
+      "block_hash": "0xaad37d391223185345c62df96c16c4541b9920799d2707a0fd066e5615f105c0",
+      "block_timestamp": 1714381991,
+      "calls": [
+        {
+          "address": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+          "signature": "totalSupply()",
+          "data": "0x18160ddd",
+          "result": "0x00000000000000000000000000000000000000000000000000013dce11b7b4c0",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "sharePrice()",
+          "data": "0x87269729",
+          "result": "0x000000000000000000000000000000000000000000000000103ff8b6140a61ce",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "totalWritedowns()",
+          "data": "0xa6f4487e",
+          "result": "0x000000000000000000000000000000000000000000000000000002e0378a00b9",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "assets()",
+          "data": "0x71a97305",
+          "result": "0x0000000000000000000000000000000000000000000000000000351f5c708da7",
+          "error": null
+        },
+        {
+          "address": "0x8481a6EbAf5c7DABc3F7e09e44A89531fd31F822",
+          "signature": "usdcAvailable()",
+          "data": "0x242d68c2",
+          "result": "0x0000000000000000000000000000000000000000000000000000000e203a3abe",
+          "error": null
+        },
+        {
+          "address": "0x5424b911d04f71357468743b24b868db0706048c",
+          "signature": "balance()",
+          "data": "0xb69ef8a8",
+          "result": "0x0000000000000000000000000000000000000000000000000000093b3b2265d3",
+          "error": null
+        },
+        {
+          "address": "0x5424b911d04f71357468743b24b868db0706048c",
+          "signature": "principalOwed()",
+          "data": "0x19350114",
+          "result": "0x0000000000000000000000000000000000000000000000000000093b3b2265d3",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

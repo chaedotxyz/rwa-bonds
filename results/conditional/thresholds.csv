@@ -1,0 +1,4 @@
+﻿scenario,break_even_face_usd,reachable_with_caps,break_even_nav_gap_bps,break_even_recovery_ratio,meaning
+B-1,,False,,,No sign-changing root in the tested domain is null; not proof of universal safety
+B-2,17839.560610780307,True,,0.9986038000953095,No sign-changing root in the tested domain is null; not proof of universal safety
+B-3,543431235.4002851,False,,,No sign-changing root in the tested domain is null; not proof of universal safety

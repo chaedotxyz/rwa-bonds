@@ -1,0 +1,4 @@
+﻿scenario,samples,positive_sample_fraction,median_net_profit_usd,interpretation,original_report_percentage_reproduced
+B-1,20000,0.0,-311630389.3751379,declared_parameter_space_fraction_not_attack_probability,False
+B-2,20000,0.99195,5379936.886259702,declared_parameter_space_fraction_not_attack_probability,False
+B-3,20000,0.0,-302277601.1959321,declared_parameter_space_fraction_not_attack_probability,False

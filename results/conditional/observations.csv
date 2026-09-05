@@ -1,0 +1,14 @@
+﻿asset,metric,value,kind,block,as_of,status,block_hash
+BUIDL Ethereum,token_supply,274807252.87,observed,19560000,2024-04-01T09:10:35+00:00,observed_not_execution_proof,0xb04ca190a7cc1ff4b29a0f3abc969339ed1d818c1427db54bde3e8b910f6f1d2
+"Senior Pool, not Lend East NAV",share_price,1.16670427146582,observed,19560000,2024-04-01T09:10:35+00:00,observed_not_execution_proof,0xb04ca190a7cc1ff4b29a0f3abc969339ed1d818c1427db54bde3e8b910f6f1d2
+"Senior Pool, not guaranteed withdrawal",available_USDC,147272.889982,observed,19560000,2024-04-01T09:10:35+00:00,observed_not_execution_proof,0xb04ca190a7cc1ff4b29a0f3abc969339ed1d818c1427db54bde3e8b910f6f1d2
+BUIDL Ethereum,token_supply,293464382.52,observed,19660000,2024-04-15T09:24:11+00:00,observed_not_execution_proof,0x40d9c193f66ebb28c31e75308a329a2a677d741dc794ff9bbc95d36eb2c4bc91
+"Senior Pool, not Lend East NAV",share_price,1.1676083917511442,observed,19660000,2024-04-15T09:24:11+00:00,observed_not_execution_proof,0x40d9c193f66ebb28c31e75308a329a2a677d741dc794ff9bbc95d36eb2c4bc91
+"Senior Pool, not guaranteed withdrawal",available_USDC,51570.440328,observed,19660000,2024-04-15T09:24:11+00:00,observed_not_execution_proof,0x40d9c193f66ebb28c31e75308a329a2a677d741dc794ff9bbc95d36eb2c4bc91
+BUIDL Ethereum,token_supply,349430246.52,observed,19760000,2024-04-29T09:13:11+00:00,observed_not_execution_proof,0xaad37d391223185345c62df96c16c4541b9920799d2707a0fd066e5615f105c0
+"Senior Pool, not Lend East NAV",share_price,1.1709278890435795,observed,19760000,2024-04-29T09:13:11+00:00,observed_not_execution_proof,0xaad37d391223185345c62df96c16c4541b9920799d2707a0fd066e5615f105c0
+"Senior Pool, not guaranteed withdrawal",available_USDC,60670.229182,observed,19760000,2024-04-29T09:13:11+00:00,observed_not_execution_proof,0xaad37d391223185345c62df96c16c4541b9920799d2707a0fd066e5615f105c0
+BUIDL Ethereum,token_supply,211939358.270349,observed,25911392,2026-09-05T13:21:23+00:00,observed_not_execution_proof,0x1c6eb11d31ba78f1ade5eabdf4c1782c3280bce7460474640f1e5ed0160c986b
+"Senior Pool, not Lend East NAV",share_price,0.9444480223681261,observed,25911392,2026-09-05T13:21:23+00:00,observed_not_execution_proof,0x1c6eb11d31ba78f1ade5eabdf4c1782c3280bce7460474640f1e5ed0160c986b
+"Senior Pool, not guaranteed withdrawal",available_USDC,0.0,observed,25911392,2026-09-05T13:21:23+00:00,observed_not_execution_proof,0x1c6eb11d31ba78f1ade5eabdf4c1782c3280bce7460474640f1e5ed0160c986b
+Senior Pool,epoch_seconds,1209600.0,observed,25911392,2026-09-05T13:21:23+00:00,observed_not_execution_proof,0x1c6eb11d31ba78f1ade5eabdf4c1782c3280bce7460474640f1e5ed0160c986b
